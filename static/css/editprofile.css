@@ -1,0 +1,162 @@
+/* Page container */
+.edit-form-container {
+    width: 700px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+/* Title */
+.edit-form-container h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #0a66c2; /* LinkedIn blue */
+}
+
+/* Django form fields */
+form p {
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+form input,
+form select,
+form textarea {
+    padding: 12px 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+    background: #fafafa;
+}
+
+/* Focus effect */
+form input:focus,
+form select:focus,
+form textarea:focus {
+    border: 1px solid #0a66c2;
+    outline: none;
+    box-shadow: 0 0 6px rgba(10, 102, 194, 0.3);
+    background: #fff;
+}
+
+/* Submit button */
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    background: #0a66c2;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+    background: #004182;
+    transform: translateY(-2px);
+}
+
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .edit-form-container {
+        width: 90%;
+        padding: 25px;
+    }
+
+    .edit-form-container h2 {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+
+    form input,
+    form select,
+    form textarea {
+        font-size: 0.95rem;
+        padding: 10px 12px;
+    }
+
+    .submit-btn {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
+
+/* Small tablets / large phones (max-width: 768px) */
+@media (max-width: 768px) {
+    .edit-form-container {
+        width: 95%;
+        padding: 20px;
+        margin: 30px auto;
+    }
+
+    .edit-form-container h2 {
+        font-size: 1.5rem;
+        margin-bottom: 18px;
+    }
+
+    form p {
+        margin-bottom: 15px;
+    }
+
+    form input,
+    form select,
+    form textarea {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .submit-btn {
+        font-size: 0.95rem;
+        padding: 10px;
+    }
+}
+
+/* Mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .edit-form-container {
+        width: 100%;
+        padding: 15px;
+        margin: 20px auto;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .edit-form-container h2 {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+    }
+
+    form p {
+        margin-bottom: 12px;
+    }
+
+    form input,
+    form select,
+    form textarea {
+        font-size: 0.85rem;
+        padding: 8px 10px;
+    }
+
+    .submit-btn {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}

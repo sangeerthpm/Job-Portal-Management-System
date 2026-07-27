@@ -1,0 +1,19 @@
+<div class="post-display">
+   
+        
+        {% for i in apply %}
+        <div class="post">
+            <h3>{{ i.Company_name}}</h3>
+            <p>{{ i.Position}}</p>
+            <p>{{i.Salary}}</p>
+            <p>{{i.Education}}</p>
+            <a href="{% url 'forapplyjob' %}"><input type="submit" name="Apply" value="Apply"></a>
+        {%endfor%}
+        </div>
+    
+</div>        
+<style>
+    .post a{
+        text-decoration: none;
+    }
+</style>

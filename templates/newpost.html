@@ -1,0 +1,7 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/newpost.css' %}">
+<div class="success-box">
+    <p class="title">✅ Post Completed</p>
+    <p class="message">You can see the post now.</p>
+    <a href="{% url 'all_posts' %}" class="back-btn">← Back</a>
+</div>

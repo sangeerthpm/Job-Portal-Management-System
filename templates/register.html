@@ -1,0 +1,16 @@
+{%load static%}
+<link rel="stylesheet" href="{% static 'css/register.css'%}">
+<title>Register</title>
+<form method="post">
+    {%csrf_token%}
+    <div class="main">
+        <h1>Sign In</h1>
+        <div class="reg">
+            {{form}}
+        </div>
+        <input type="submit" value="Register" name="button" class="but">
+    </div>
+    
+</form>
+
+

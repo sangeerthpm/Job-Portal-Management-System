@@ -1,0 +1,173 @@
+/* Page layout */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f6f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Form wrapper */
+.mainn {
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+    width: 420px;
+    margin-top: 50px;
+}
+form{
+    margin-bottom: 100px;
+}
+/* Title */
+.mainn h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2a6edc;
+}
+
+/* Form fields */
+.reg p {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Labels */
+.reg label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #444;
+}
+
+/* Inputs */
+/* Form fields only */
+.reg input, 
+.reg select, 
+.reg textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+/* Focus effect */
+.reg input:focus, 
+.reg select:focus, 
+.reg textarea:focus {
+    border: 1px solid #2a6edc;
+    outline: none;
+    box-shadow: 0 0 4px rgba(42,110,220,0.3);
+}
+
+/* Submit button (fix) */
+.but {
+    display: block;
+    width: 100%;           /* stays button width, not full height */
+    padding: 12px;
+    margin-top: 15px;
+    background: #2a6edc;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+/* Hover effect */
+.but:hover {
+    background: #174ea6;
+}
+
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .mainn {
+        width: 350px;
+        padding: 25px 30px;
+    }
+
+    .mainn h1 {
+        font-size: 1.6rem;
+    }
+
+    .reg input,
+    .reg select,
+    .reg textarea {
+        padding: 10px 12px;
+        font-size: 0.95rem;
+    }
+
+    .but {
+        font-size: 0.95rem;
+        padding: 10px;
+    }
+}
+
+/* Small tablets / large phones (max-width: 768px) */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .mainn {
+        width: 90%;
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+    .mainn h1 {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+    }
+
+    .reg input,
+    .reg select,
+    .reg textarea {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .but {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    body {
+        padding: 5px;
+    }
+
+    .mainn {
+        width: 100%;
+        padding: 15px;
+        margin-top: 20px;
+    }
+
+    .mainn h1 {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+
+    .reg input,
+    .reg select,
+    .reg textarea {
+        padding: 8px;
+        font-size: 0.85rem;
+    }
+
+    .but {
+        padding: 10px;
+        font-size: 0.85rem;
+    }
+}

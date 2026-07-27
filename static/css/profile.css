@@ -1,0 +1,159 @@
+/* Main container */
+.mainn {
+    width: 600px;
+    margin: 40px auto;
+    padding: 25px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 100px;
+}
+
+/* Title */
+.mainn h4 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #0a66c2; /* LinkedIn blue */
+    letter-spacing: 1px;
+    border-bottom: 2px solid #e6e6e6;
+    padding-bottom: 10px;
+}
+
+/* Profile rows */
+.common {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 18px;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background 0.2s ease;
+}
+
+.common:hover {
+    background: #f9fafc;
+    border-radius: 8px;
+}
+
+/* Label (left side) */
+.common p:first-child {
+    font-weight: 600;
+    color: #444;
+    flex: 1;
+}
+
+/* Value (right side) */
+.common p:last-child {
+    flex: 2;
+    text-align: right;
+    color: #222;
+}
+
+/* Edit button */
+.but {
+    display: block;
+    margin: 25px auto 0;
+    padding: 12px 24px;
+    border-radius: 8px;
+    background: #0a66c2;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.but:hover {
+    background: #004182;
+    transform: translateY(-2px);
+}
+
+
+/* ✅ Responsive Design */
+
+/* Tablets (max-width: 900px) */
+@media (max-width: 900px) {
+  .mainn {
+    width: 80%;
+    padding: 20px;
+  }
+
+  .mainn h4 {
+    font-size: 1.6rem;
+  }
+
+  .common {
+    padding: 12px 14px;
+  }
+
+  .common p:first-child {
+    flex: 1.2;
+  }
+
+  .common p:last-child {
+    flex: 2;
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobiles (max-width: 600px) */
+@media (max-width: 600px) {
+  .mainn {
+    width: 95%;
+    margin: 20px auto;
+    padding: 15px;
+  }
+
+  .mainn h4 {
+    font-size: 1.3rem;
+    padding-bottom: 6px;
+  }
+
+  .common {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding: 10px 12px;
+  }
+
+  .common p:first-child {
+    margin-bottom: 5px;
+    font-size: 0.95rem;
+  }
+
+  .common p:last-child {
+    text-align: left;
+    font-size: 0.9rem;
+  }
+
+  .but {
+    width: 100%;
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+}
+
+/* Very small screens (max-width: 400px) */
+@media (max-width: 400px) {
+  .mainn {
+    padding: 12px;
+    border-radius: 8px;
+  }
+
+  .mainn h4 {
+    font-size: 1.1rem;
+  }
+
+  .common p:first-child,
+  .common p:last-child {
+    font-size: 0.85rem;
+  }
+
+  .but {
+    font-size: 0.85rem;
+    padding: 9px;
+  }
+}

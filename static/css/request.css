@@ -1,0 +1,174 @@
+/* Page title */
+.page-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    color: #2033c4;
+}
+
+/* Grid container */
+.post-display {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+    margin-bottom: 220px;
+}
+
+/* Each card */
+.post {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect */
+.post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+/* Job title */
+.post-header h3 {
+    font-size: 1.2rem;
+    color: #2a6edc;
+    margin-bottom: 10px;
+}
+
+/* Applicant details */
+.post-body p {
+    margin: 6px 0;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* Resume link */
+.resume-link {
+    text-decoration: none;
+    color: #2a6edc;
+    font-weight: 500;
+}
+
+/* Action buttons */
+.post-actions {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+/* Base button */
+.btn {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Accept */
+.btn.accept {
+    background: #2ecc71;
+    color: white;
+}
+.btn.accept:hover {
+    background: #27ae60;
+    transform: translateY(-2px);
+}
+
+/* Reject */
+.btn.reject {
+    background: #e74c3c;
+    color: white;
+}
+.btn.reject:hover {
+    background: #c0392b;
+    transform: translateY(-2px);
+}
+
+/* No data */
+.no-data {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #888;
+}
+/* ✅ Responsive Design */
+
+/* Large tablets (max-width: 1200px) */
+@media (max-width: 1200px) {
+  .post-display {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Tablets (max-width: 900px) */
+@media (max-width: 900px) {
+  .post-display {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .post {
+    padding: 16px;
+  }
+
+  .post-header h3 {
+    font-size: 1.1rem;
+  }
+}
+
+/* Mobile screens (max-width: 600px) */
+@media (max-width: 600px) {
+  .page-title {
+    font-size: 1.5rem;
+  }
+
+  .post-display {
+    grid-template-columns: 1fr; /* Single column */
+    padding: 0 10px;
+  }
+
+  .post {
+    padding: 14px;
+  }
+
+  .post-body p {
+    font-size: 0.9rem;
+  }
+
+  .resume-link {
+    font-size: 0.9rem;
+  }
+
+  .post-actions {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .post-actions a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Small mobile screens (max-width: 400px) */
+@media (max-width: 400px) {
+  .page-title {
+    font-size: 1.3rem;
+  }
+
+  .post {
+    padding: 12px;
+  }
+
+  .post-body p {
+    font-size: 0.85rem;
+  }
+}

@@ -1,0 +1,154 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon" />
+    <link rel="stylesheet" href="{% static 'css/home1.css' %}">
+</head>
+
+<body>
+    
+       {% block content %} 
+        <div class="main">
+            <div class="left">
+                <div class="head">
+                    <p>welcome your <br>preffesional community</p>
+                </div>
+                <div class="login-type">
+                    <div class="google c">
+                        <img src="{% static 'images/google.jpeg' %}" width="30px" height="30px">
+                        <p>Continue with google</p>
+                    </div>
+                    <div class="microsoft c">
+                        <img src="{% static 'images/microsoft.jpeg' %}" width="30px" height="30px">
+                        <p>Continue with microsoft</p>
+                    </div>
+                    <div class="email c">
+                        <p>Sign with Email</p>
+                    </div>
+                </div>
+                <div class="left-content">
+                    <p>By clicking Continue to join or sign in, you agree to LinkedIn’s User<br></p>
+                        <p>Agreement, Privacy Policy, and Cookie Policy.</p>
+                    <p>New to Job Portal? Join now</p>     
+                </div>
+            </div>
+            <div class="right">
+                <img src="{% static 'images/link-home.png' %}" height="700px" width="700px">
+            </div>
+        </div>
+        <div class="container">
+            <div class="container-left">
+                <p>Explore collaborative articles</p>
+                <p>We’re unlocking community knowledge in a new<br>
+                    way. Experts add insights directly into each<br>
+                    article, started with the help of AI.</p>
+            </div>
+            <div class="container-right">
+                <div class="line">
+                    <span>marketing</span>
+                    <span>Public administartion</span>
+                    <span>healthcare</span>
+                    <span>Engineering</span>
+                </div>
+                <div class="line">
+                    <span>It service</span>
+                    <span>Sustanability</span>
+                    <span>Bussiness Administration</span>
+                </div>  
+                <div class="line">
+                    <span>Telecommunication</span>
+                    <span>HR management</span>
+                    <span class="showall">Show All</span>
+                </div>      
+            </div>
+        </div>
+        <div class="second-container">
+            <div class="second-container-left">
+                <p>Find the right job or<br>
+                Intership for you</p>
+                
+            </div>
+            <div class="second-container-right">
+                <div class="line">
+                    <span>Engneeing</span>
+                    <span>Business Assistant</span>
+                    <span>Finance</span>
+                </div>
+                <div class="line">
+                    <span>Administrative Assistant</span>
+                    <span>Retail associate</span>
+                    <span>Customer Service</span>
+                </div>  
+                <div class="line">
+                    <span>operations</span>
+                    <span>Information technology</span>
+                    <span>Marketing</span>
+                </div>   
+                <div class="line">
+                    <span>human Resoures</span>
+                    
+                </div>
+                <div class="line">
+                    
+                    <span class="showall">Show All</span>
+                </div>   
+            </div>
+        </div>
+        <div class="post-job">
+            <p>Post your job for millions of people to see</p>
+            <p>Post a job</p>
+        </div>
+        <div class="connect-learn">
+            <div class="connect">
+                <img src="{% static 'images/connect.svg' %}" width="400px" height="400px">
+                <p class="para">Connect with people who can <br>help</p>
+                <p>Find people you know</p>
+            </div>
+        
+            <div class="learn2">
+                <img src="{% static 'images/learn.svg'%}" width="400px" height="400px">
+                <p class="para">Learn the skills you need to<br> succeed</p>
+                <p>Choose a topic to learn </p>
+            </div>
+        </div>    
+        <div class="whois">
+            <div class="whois-left">
+                <div class="whois-left-con">
+                    <p>Who is Job Portal for?</p>
+                    <p>Anyone looking to navigate their professional life.</p>
+                    <p class="wlc">Find a coworker or classmate</p>
+                    <p class="wlc">Find a new job</p>
+                    <p class="wlc">Find a coures</p>
+                </div> 
+                    
+            </div>
+            <div class="whois-right">
+                <img src="{% static 'images/linkedin.jpg' %}" width="650px" height="800px" >
+            </div>
+        </div>
+        <div class="video-content">
+            <div class="video">
+                <iframe width="500" height="300" 
+                src="https://www.youtube.com/embed/t5JPW31_Dj8"
+        
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+                </iframe>
+            </div>    
+            <div class="video-para">
+                <p>In it to chase my dream</p>
+                <p>Check out Gayatri’s story of finding a new <br>
+                    job on Job Portal</p>
+            </div>
+        </div>
+        
+     {% endblock %}
+</body>
+</html>

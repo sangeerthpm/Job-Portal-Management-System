@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/job_list.css' %}">
+<h2>Available Jobs</h2>
+
+    <div class="job">
+        {% for job in jobs %}
+            <div class="job-main">
+                <p>Job Vacancy:<b>{{ job.position }} at {{ job.company.name }}  </b></p>
+                <p>Education:{{ job.education }}</p>
+                <p>Salary: {{ job.salary }}</p>
+                <p>Description for job:{{ job.description }}</p>
+                <a href="{% url 'apply_job' %}"><button>Apply Now</button></a>
+            </div>
+        {% empty %}
+            <li>No jobs available</li>
+        {% endfor %}
+    
+    </div>
+{% endblock %} 

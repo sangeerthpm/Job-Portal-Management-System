@@ -1,0 +1,30 @@
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/login.css' %}">
+
+<div class="container">
+    <!-- Left side: form -->
+    <div class="left">
+        <form method="post">
+            {% csrf_token %}
+            <div class="main">
+                <h1><b>LOGIN</b></h1>
+                <h2 class="h"><b>Job Portal</b></h2>
+
+                <div class="login">
+                    
+                    <input type="text" placeholder="Enter Username" name="username" class="usr">
+                    <input type="password" placeholder="Enter Password" name="password" class="psw">
+                    <input type="submit" value="Login" class="button">
+
+                    <p>Don't have account ?  
+                        <a href="{% url 'register' %}">Register now</a>
+                    </p>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Right side: full background image -->
+    <div class="right"></div>
+</div>

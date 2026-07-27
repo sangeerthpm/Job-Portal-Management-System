@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content%}
+<link rel="stylesheet" href="{% static 'css/accepted.css' %}">
+
+<div class="approved-container">
+    <h2>Approved Job Applications</h2>
+    {% if bookings %}
+        {% for book in bookings %}
+            <div class="application-card">
+                <p><strong>Applicant:</strong> {{ book.applicant }}</p>
+                <p><strong>Postion:</strong> {{ book.job }}</p>
+                <p><strong>Status:</strong> {{ book.status }}</p>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p class="no-data">No applications approved yet.</p>
+    {% endif %}
+</div>
+{% endblock %}

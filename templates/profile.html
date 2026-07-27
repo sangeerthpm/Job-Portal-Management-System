@@ -1,0 +1,33 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block content %} 
+<link rel="stylesheet" href="{% static 'css/profile.css' %}">
+   <div class="mainn">
+    <h4><b>PROFILE</b></h4> 
+      <div class="name common">
+         <p><b>Name </b></p> <p>{{pro.user}}</p> 
+      </div>
+      <div class="bio common"> 
+         <p><b>Bio</b></p> <p>{{pro.Education}}</p> 
+      </div>
+      <div class="address common"> 
+            <p><b>Address </b></p> <p>{{pro.Description}}</p> 
+      </div> 
+      <div class="email common">
+         <p><b>Email </b> </p> <p>{{pro.Date_of_birth}}</p>
+      </div>
+      <div class="number common"> 
+         <p><b>phone_number</b></p> <p>{{pro.Phone_number}}</p> 
+      </div>
+      <div class="edu common"> 
+         <p><b>Education</b></p> <p>{{pro.Education}}</p> 
+      </div>
+      <div class="cou common"> 
+         <p><b>Coures</b></p> <p>{{pro.Coures}}</p>
+      </div> 
+      <div class="hobby common"> 
+         <p><b>Hobby</b></p> <p>{{pro.Hobbies}}</p> 
+      </div> 
+      <a href="{% url 'edit' %}"><button class="but">Edit</button></a>
+   </div> 
+{% endblock %}
